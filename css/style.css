@@ -1,14 +1,18 @@
 *{
   padding: 0;
   margin: 0;
-  font-size: 16px;
   scroll-behavior: smooth;
 }
-
+html{
+  max-height: 100%;
+  max-width: 100%;
+}
 
 body{
   overflow: hidden;
   display: flex;
+  max-height: 100%;
+  max-width: 100%;
   flex-flow: column;
 }
 a{
@@ -17,6 +21,7 @@ a{
 }
 section{
   overflow: hidden;
+  max-height: 100%;
 }
 header{
   display: flex;
@@ -27,8 +32,8 @@ header{
   top: 1.5%;
 }
 header h1 {
-  font-size: 50px;
-  font-family: 'Rounded Mplus 1c';
+  font-size: 3.5em;
+  font-family: 'Rounded mplus 1c';
   color: rgb(0, 215, 12);
   text-shadow: black 1px 1px 0, black -1px -1px 0,
                black -1px 1px 0, black 1px -1px 0;
@@ -44,7 +49,7 @@ header ul {
 header ul li {
   display: flex;
   justify-content: center;
-  font-size: 22px;
+  font-size: 1.4em;
   font-family: 'Rounded Mplus 1c';
   text-shadow: white 1px 1px 0, white -1px -1px 0,
                white -1px 1px 0, white 1px -1px 0;
@@ -103,9 +108,9 @@ header ul a {
 .slick-dots{
 position: absolute;
 bottom: 0;
-margin-bottom: 40px;
-margin-left: 40px;
-width: 195px;
+bottom: 3.5%;
+left: 2%;
+width: 170px;
 display: flex;
 justify-content: space-around;
 }
@@ -123,8 +128,8 @@ justify-content: space-around;
   justify-content: center;
   border: 2px solid white;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: rgba(67, 150, 53, 0);
   list-style: none;
   border-radius: 100px;
@@ -157,14 +162,13 @@ justify-content: space-around;
   position: absolute;
   justify-content: center;
   align-items: center;
-  position: absolute;
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid white;
   color: white;
   border-radius: 100px;
   z-index: 2;
   bottom: 5%;
-  right: 50%;
+  right: 5%;
   width: 130px;
   height: 40px;
   font-size: 18px;
@@ -269,7 +273,7 @@ justify-content: space-around;
   background-position: center;
   position: absolute;
   bottom: -15%;
-  left: 10%;
+  left: -30%;
 }
 .slick-next{
   font-size: 0;
@@ -278,7 +282,7 @@ justify-content: space-around;
   background-size:cover;
   bottom: -15%;
   position: absolute;
-  left: 20%;
+  right: 5%;
 }
 .moreInfo2{
   display: flex;
@@ -292,7 +296,7 @@ justify-content: space-around;
   border-radius: 100px;
   z-index: 2;
   bottom: 5%;
-  right: 50%;
+  right: 5%;
   width: 130px;
   height: 40px;
   font-size: 18px;
@@ -313,8 +317,9 @@ justify-content: space-around;
 .section3 {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
-  background-image: url(../img/bck4.png);
+  justify-content: space-between;;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
   background-position: center;
   background-size: cover;
   font-family: 'Rounded Mplus 1c'
@@ -433,6 +438,7 @@ justify-content: space-around;
   min-height: 100%;
   background-size: cover;
   overflow: auto;
+  overflow-x: hidden;
   background-attachment: fixed;
   display: flex;
   justify-content: space-between;
@@ -441,7 +447,7 @@ justify-content: space-around;
 
 .mainContent{
   display: flex;
-  width: 80%;
+  width: 95%;
   height: 800px;
   margin-top: 180px;
   background-color: rgba(255, 255, 255, 0.93);
@@ -485,6 +491,41 @@ justify-content: space-around;
   text-shadow: black 1px 1px 0, black -1px -1px 0,
                black -1px 1px 0, black 1px -1px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobileFixed, .afterClick{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  background-color: rgb(22, 22, 22);
+  height: 40px;
+  width: 40px;
+  z-index: 20;
+  padding: 5px;
+}
+.mobileFixed div, .afterClick div{
+  width: 25px;
+  height: 1px;
+  background-color: white;
+}
+
+
+
 
 
 

@@ -1,18 +1,58 @@
-/* @media (max-width: 1020px){
-  .ecoProblems{
-    width: 250px;
+@media (max-width: 1400px){
+  .contentBlock p{
+    font-size: 1em;
   }
-  .ecoProblems h2 {
+}
+@media (max-width: 860px){
+  .slide p{
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 750px){
+  .contentBlock p{
+    font-size: .8em;
+  }
+  .moreInfo{
+    right: 10%;
+    bottom: 5%;
+  }
+}
+@media (max-width: 715px){
+  .slide2 p{
+    font-size: .55em;
+  }
+  .slide2 h2{
+    font-size: 1.8em;
+  }
+  .slide2 h3{
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 600px){
+  header a h1{
+    font-size: 2.3em;
+  }
+}
+@media (max-width: 650px){
+  .slide p{
     font-size: 3em;
   }
 }
-@media (max-width: 915px){
-  .slide2{
-  width: 250px;
+@media (max-width: 550px){
+  .slide p{
+    font-size: 2.5em;
+  }
+  .contentBlock p{
+    font-size: .5em;
   }
 }
-@media (max-width: 800px){
-  .slide{
-  width: 250px;
+@media (max-width: 450px){
+  .slide p{
+    font-size: 2em;
   }
-} */
+}
+@media (max-width: 350px){
+  .slide p{
+    font-size: 1.5em;
+  }
+}

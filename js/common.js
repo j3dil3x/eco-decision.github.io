@@ -49,7 +49,6 @@ let heightEco = (height - height * 0.2);
 let width = $(window).width();
 // $('.slider2').css({'max-width' : `${$(window).width() - 500}px`});
 // $(window).resize(function(){
-  $('.slider2').css({'max-width' : `${$(window).width() - 500}px`});
 // });
 $('section').css({'height' : `${$(window).height()}px`});
 $('.slide').css({'height' : `${$(window).height()}px`});
