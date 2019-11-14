@@ -4,24 +4,21 @@
   scroll-behavior: smooth;
 }
 html{
-  max-height: 100%;
   max-width: 100%;
 }
 
 body{
   overflow: hidden;
   display: flex;
-  max-height: 100%;
   max-width: 100%;
   flex-flow: column;
 }
 a{
   text-decoration: none;
-  color: white;
+  color: rgb(240, 240, 240);
 }
 section{
   overflow: hidden;
-  max-height: 100%;
 }
 header{
   display: flex;
@@ -33,7 +30,7 @@ header{
 }
 header h1 {
   font-size: 3.5em;
-  font-family: 'Rounded mplus 1c';
+  font-family: 'Didact Gothic';
   color: rgb(0, 215, 12);
   text-shadow: black 1px 1px 0, black -1px -1px 0,
                black -1px 1px 0, black 1px -1px 0;
@@ -50,7 +47,7 @@ header ul li {
   display: flex;
   justify-content: center;
   font-size: 1.4em;
-  font-family: 'Rounded Mplus 1c';
+  font-family: 'Didact Gothic';
   text-shadow: white 1px 1px 0, white -1px -1px 0,
                white -1px 1px 0, white 1px -1px 0;
   transition: 0.2s;
@@ -65,7 +62,7 @@ header ul li:hover{
 }
 header ul a {
   text-decoration: none;
-  color: black;
+  color: rgb(15, 15, 15);
 }
 .slide{
   background-size: cover;
@@ -81,7 +78,7 @@ header ul a {
 .blackLine{
   display: flex;
   width: 100%;
-  color: white;
+  color: rgb(240, 240, 240);
   text-shadow: black 1px 1px 0, black -1px -1px 0,
                black -1px 1px 0, black 1px -1px 0;
   font-family: 'Amatic SC';
@@ -122,12 +119,16 @@ justify-content: space-around;
   width: 60px;
   transition: 1s;
 }
+input {
+    outline: none;
+}
 .slick-button{
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
   width: 35px;
   height: 35px;
   background-color: rgba(67, 150, 53, 0);
@@ -154,26 +155,27 @@ justify-content: space-around;
   width: 60px;
 }
 .darkTheme{
-  color: black;
-  border-color: black;
+  color: rgb(15, 15, 15);
+  border-color: rgb(15, 15, 15);
 }
 .moreInfo {
+  z-index: 9999;
   display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
-  color: white;
+  border: 2px solid rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
   border-radius: 100px;
   z-index: 2;
   bottom: 5%;
-  right: 5%;
+  right: 0;
   width: 130px;
   height: 40px;
   font-size: 18px;
   text-shadow: 0px 0px 3px black;
-  font-family: 'Rounded Mplus 1c';
+  font-family: 'Didact Gothic';
   cursor: pointer;
   transition: 0.5s;
 }
@@ -211,8 +213,8 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: rgb(15, 15, 15);
+  color: rgb(240, 240, 240);
   font-family: 'Amatic SC';
   width: 500px;
   height: 100%;
@@ -233,11 +235,11 @@ justify-content: space-around;
   margin-top: 20px;
   width: 350px;
   height: 460px;
-  background-color: black;
-  font-family: 'Rounded Mplus 1c';
+  background-color: rgb(15, 15, 15);
+  font-family: 'Didact Gothic';
   border-radius: 0 0 30px 30px;
   margin: 0 60px;
-  box-shadow: 0px 0px 2px black;
+  box-shadow: 0px 0px 2px rgb(15, 15, 15);
 }
 .slide2 img:first-child{
   width: 100%;
@@ -257,9 +259,10 @@ justify-content: space-around;
   padding: 10px;
 }
 .slick-arrow{
+  outline: none;
   background-color: rgba(0, 0, 0, 0);
-  color: white;
-  border: 2px solid white;
+  color: rgb(240, 240, 240);
+  border: 2px solid rgb(240, 240, 240);
   border-radius: 100px;
   width: 50px;
   height: 50px;
@@ -272,17 +275,19 @@ justify-content: space-around;
   background-size:contain;
   background-position: center;
   position: absolute;
-  bottom: -15%;
-  left: -30%;
+  bottom: -12%;
+  left: -20%;
+  z-index: 10;
 }
 .slick-next{
   font-size: 0;
   background-image: url(../img/next.png);
   background-position: bottom;
   background-size:cover;
-  bottom: -15%;
+  bottom: -12%;
   position: absolute;
-  right: 5%;
+  right: 10%;
+  margin-right: 140px;
 }
 .moreInfo2{
   display: flex;
@@ -291,21 +296,21 @@ justify-content: space-around;
   align-items: center;
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
-  color: white;
+  border: 2px solid rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
   border-radius: 100px;
   z-index: 2;
   bottom: 5%;
-  right: 5%;
+  right: 0;
   width: 130px;
   height: 40px;
   font-size: 18px;
   text-shadow: 0px 0px 3px black;
-  font-family: 'Rounded Mplus 1c';
+  font-family: 'Didact Gothic';
   cursor: pointer;
   transition: 0.5s;
+  z-index: 9999;
 }
-
 
 
 
@@ -313,71 +318,62 @@ justify-content: space-around;
 
 .wrap2{
   display: none;
+  overflow: auto;
+}
+.section3{
+  overflow-y: auto;
+}
+.section3Wrap{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  color: rgb(15, 15, 15);
+}
+.section3Wrap ol li{
+  padding: 0 30px;
+}
+.section3Wrap ol li p{
+  font-size: 1.5em;
+}
+.section3Wrap ol{
+  list-style: georgian;
+}
+.section3Wrap ol li h4{
+  font-size: 3em;
 }
 .section3 {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;;
-  align-items: center;
-  background-color: rgb(230, 230, 230);
-  background-position: center;
-  background-size: cover;
-  font-family: 'Rounded Mplus 1c'
+  width: 80%;
+  font-family: 'Didact Gothic', sans-serif;
+}
+.section3 p {
+  font-size: 1em;
 }
 .section3 h2 {
-  font-size: 50px;
-}
-.natureLove {
-  align-self: flex-end;
-  color: white;
-  margin-right: 80px;
-  animation-delay: 1s;
-}
-.natureNotSave{
-  margin-left: 80px;
-  animation-delay: .5s;
-}
-.cards {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  width: 98%;
-}
-.card {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  width: 400px;
-  height: 500px;
-  margin: 0 70px;
-  border-radius: 0 0 300px 300px;
-  animation-delay: 2s;
-}
-.card p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-  padding: 0 10px 10px 20px;
-  margin-bottom: 100px;
-  margin-left: 30px;
-}
-.card img {
-  width: 400px
-}
-.card h3{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
+  font-size: 4em;
 }
 
 
 
 
+.preloader {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 4em;
+font-family: 'Didact Gothic';
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: #000;
+color: #fff;
+z-index: 9999999;
+}
 
 
 
@@ -388,37 +384,37 @@ justify-content: space-around;
   display: flex;
   flex-flow: column;
   position: absolute;
-  top: 20%;
-  right: 3%;
-  z-index: 4;
+  right: 0;
+  z-index: 1;
   list-style: none;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 130px;
+  background-color: rgb(15, 15, 15);
 }
 .list{
-  font-family: 'Rounded mplus 1c';
+  font-family: 'Didact Gothic';
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  border: 2px solid white;
-  width: 30px;
+  color: rgb(240, 240, 240);
+  width: 90px;
   height: 30px;
-  border-radius: 100px;
   transition: .2s;
   font-size: 18px;
   cursor: pointer;
 }
 .list1{
   height: 40px;
-  width: 40px;
+  width: 90px;
   font-size: 24px;
 }
 .line{
   height: 120px;
-  border: 1.5px solid white;
+  border: 1.5px solid rgb(240, 240, 240);
   width: 0px;
-  color: white;
+  color: rgb(240, 240, 240);
   z-index: 4;
 }
 
@@ -434,7 +430,7 @@ justify-content: space-around;
 
 
 .bck{
-  font-family: 'Rounded mplus 1c';
+  font-family: 'Didact Gothic';
   min-height: 100%;
   background-size: cover;
   overflow: auto;
@@ -481,7 +477,7 @@ justify-content: space-around;
   display: flex;
   justify-content: space-around;
   width: 400px;
-  color: white;
+  color: rgb(240, 240, 240);
   bottom: -30%;
   left: 50%;
 }
@@ -521,7 +517,7 @@ justify-content: space-around;
 .mobileFixed div, .afterClick div{
   width: 25px;
   height: 1px;
-  background-color: white;
+  background-color: rgb(240, 240, 240);
 }
 
 
@@ -550,7 +546,7 @@ footer{
   justify-content: center;
   align-items: center;
   height: 300px;
-  color: white;
+  color: rgb(240, 240, 240);
   background-color: rgb(40, 40, 40);
   width: 100%;
   margin-top: 100px;
